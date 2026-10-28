@@ -1,0 +1,27 @@
+<!DOCTYPE html> <!-- just declares the type of document (html) -->
+
+<head> <!-- info ABOUT the page -->
+    <title>Self Driving Car(No Libraries)</title> <!-- tab title -->
+    <link rel = "stylesheet" href = "style.css"> <!-- connects html file to the css file -->
+</head>
+
+<body> <!-- visible parts of page -->
+    <canvas id = "carCanvas"></canvas> <!-- makes a drawing surface -->
+    <div id = "verticalButtons">
+        <button onclick = "save()">💾</button> <!-- buttons to save or discard the best AI neural network -->
+        <button onclick = "discard()">🗑️</button>
+    </div>
+    <canvas id = "networkCanvas"></canvas>
+
+    <!-- loads the simulators classes and helper functions -->
+    <script src = "car.js"></script>
+    <script src = "network.js"></script>
+    <script src = "sensors.js"></script>
+    <script src = "utils.js"></script>
+    <script src = "road.js"></script>
+    <script src = "controls.js"></script>
+    <script src = "visualizer.js"></script>
+    <script src = "main.js"></script>
+</body>
+
+</html>
